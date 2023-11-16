@@ -34,7 +34,7 @@ class Character:
 
     def attack(self):
         # Вместо числа 5 теперь используется константа DEFAULT_ATTACK.
-        value_attack = DEFAULT_ATTACK + randint(*self.RANGE_VALUE_ATTACK)
+        value_attack = DEFAULT_ATTACK + randint(*self.RANGE_VALUE_ATTACK)  # Оператор * распаковывает передаваемый кортеж.
         return (f'{self.name} нанёс противнику урон, равный {value_attack}')
 
     def defence(self):
